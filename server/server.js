@@ -13,7 +13,7 @@ const { token } = require('../token');
 const app = express();
 
 // Replace with your mongoLab URI
-const MONGO_URI = `mongodb+srv://p00gz:${token}@cluster0.1wglo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const MONGO_URI = `mongodb://p00gz:${token}@cluster0-shard-00-00.1wglo.mongodb.net:27017,cluster0-shard-00-01.1wglo.mongodb.net:27017,cluster0-shard-00-02.1wglo.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-6mxpba-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
 // Mongoose's built in promise library is deprecated, replace it with ES2015 Promise
 mongoose.Promise = global.Promise;
