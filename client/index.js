@@ -9,9 +9,11 @@ const client = new ApolloClient({
 
 const Root = () => {
   return (
-    <div>
-      Auth Starter
-    </div>
+    <ApolloProvider client={client}>
+      <div>
+        Auth Stater
+      </div>
+    </ApolloProvider>
   );
 };
 
