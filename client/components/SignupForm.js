@@ -19,7 +19,7 @@ class SignUpForm extends Component {
     })
       .catch(res => {
         const errors = res.graphQLErrors.map(error => error.message);
-        this.setState({ errors })
+        this.setState({ errors });
       })
   }
 
@@ -36,6 +36,4 @@ class SignUpForm extends Component {
   }
 }
 
-export default graphql(query)(
-  graphql(mutation)(SignUpForm)
-);
+export default graphql(mutation)(SignUpForm);
