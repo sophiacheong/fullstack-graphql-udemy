@@ -12,7 +12,7 @@ class AuthForm extends Component {
   render() {
     return (
       <div className="row">
-        <form className="col s4">
+        <form onSubmit={this.onSubmit.bind(this)} className="col s4">
           <div className="input-field">
             <label>Email</label>
             <input
