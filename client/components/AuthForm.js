@@ -9,6 +9,13 @@ class AuthForm extends Component {
     }
   }
 
+  onSubmit(e) {
+    e.preventDefault();
+    const { email, password } = this.state;
+
+    this.props.onSubmit({ email, password });
+  }
+
   render() {
     return (
       <div className="row">
