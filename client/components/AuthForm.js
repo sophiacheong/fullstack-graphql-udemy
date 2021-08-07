@@ -21,15 +21,16 @@ class AuthForm extends Component {
       <div className="row">
         <form onSubmit={this.onSubmit.bind(this)} className="col s4">
           <div className="input-field">
-            <label>Email</label>
             <input
+              placeholder="email"
               value={this.state.email}
               onChange={e => this.setState({ email: e.target.value })}
             />
           </div>
           <div className="input-field">
-            <label>Password</label>
             <input
+              placeholder="password"
+              type="password"
               value={this.state.password}
               onChange={e => this.setState({ password: e.target.value })}
             />
