@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { graphql } from 'react-apollo';
 
-class SignupForm extends Component {
+class SignUpForm extends Component {
   render() {
     return (
       <div>Sign Up</div>
@@ -9,4 +9,4 @@ class SignupForm extends Component {
   }
 }
 
-export default SignupForm;
+export default SignUpForm;
