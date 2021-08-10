@@ -43,4 +43,6 @@ class SignUpForm extends Component {
   }
 }
 
-export default graphql(mutation)(SignUpForm);
+export default graphql(query)(
+  graphql(mutation)(SignUpForm)
+);
